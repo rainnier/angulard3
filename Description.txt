@@ -1,0 +1,42 @@
+Folder Structure
+
+Component
+Input Parameter
+Output Parameter
+
+Directives
+Structural Directives
+Style Directives
+Attribute Directives
+
+Routes
+
+MVW
+Model View Whatever
+
+app -
+core
+ guards
+ interceptors
+ services
+
+shared
+ DUMB Components - header, footer, panel
+ components
+ models
+ directives
+ pipes
+
+modules
+
+ grouping into
+ Logic | Functionality
+ Data
+
+ components
+ directives
+ pipes
+
+ pages - SMART Component
+ components - DUMB Component
+
