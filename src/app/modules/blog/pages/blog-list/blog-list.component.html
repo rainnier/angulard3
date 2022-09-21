@@ -5,10 +5,14 @@
 <div *ngFor="let data of blogs; let i = index">
     <!-- <app-blog-item *ngIf="data.published && data.authorActive" [blog]="data" (loveEmitter)="loveAction($event)"></app-blog-item> -->
     
-    <h1>{{i}}</h1>
-    <app-blog-item [blog]="data" (loveEmitter)="loveAction($event)"></app-blog-item>
+    <div [ngClass]="['card','card2', 'card3']">
+        <app-blog-item [blog]="data" (loveEmitter)="loveAction($event)"></app-blog-item>
+    </div>
 
 </div>
+
+<div [ngClass]="['card']">hello</div>
+<button (click)="changeCss()">Change CSS</button>
 
 <!-- <ng-container *ngFor="let numbs of nums">
     <div [ngSwitch]="numbs">

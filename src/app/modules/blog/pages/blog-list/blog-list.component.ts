@@ -7,9 +7,12 @@ import { Blog } from '../../models/blog';
   styleUrls: ['./blog-list.component.scss']
 })
 export class BlogListComponent implements OnInit {
-  num:number = 0;
-  nums:number[] = [2, 3, 1, 7, 2]
-  blogs:Blog[] = [
+  num: number = 0;
+  width = "200px";
+  height = "300px";
+  color = "yellow";
+  nums: number[] = [2, 3, 1, 7, 2]
+  blogs: Blog[] = [
     {
       title: "Mukbang",
       description: "eating much much",
@@ -20,13 +23,13 @@ export class BlogListComponent implements OnInit {
       title: "Wala akong maisip",
       description: "...",
       published: true,
-      authorActive:true
+      authorActive: true
     },
     {
       title: "Kahit ano",
       description: "anything under the sun",
       published: true,
-      authorActive:false
+      authorActive: false
     }
   ]
 
@@ -35,11 +38,17 @@ export class BlogListComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  loveAction(blog:Blog) {
+  loveAction(blog: Blog) {
     console.log(blog);
   }
 
   incrementNum() {
     this.num++;
+  }
+
+  changeCss() {
+    this.width = "100px";
+    this.height = "100px";
+    this.color = "red";
   }
 }

@@ -10,6 +10,7 @@ Directives
 Structural Directives
  *ngIf *ngSwitch *ngFor
 Style Directives
+ ngStyle ngClass
 Attribute Directives
 
 Routes
