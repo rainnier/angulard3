@@ -8,6 +8,7 @@ Output Parameter
 
 Directives
 Structural Directives
+ *ngIf *ngSwitch *ngFor
 Style Directives
 Attribute Directives
 
