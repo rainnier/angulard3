@@ -1,6 +1,8 @@
 Folder Structure
 
 Component
+
+Component Interaction
 Input Parameter
 Output Parameter
 
@@ -38,5 +40,5 @@ modules
  pipes
 
  pages - SMART Component
- components - DUMB Component
+ components - DUMB Component 
 
